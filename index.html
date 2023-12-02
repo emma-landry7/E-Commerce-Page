@@ -9,11 +9,23 @@
         rel="stylesheet" 
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" 
         crossorigin="anonymous" />
-    <script src="index.js"></script>
 </head>
 <body>
-    
+    <template id="card-template">
+        <section class="card" style="width: 18rem">
+            <article class="card-body">
+                <img id="output" class="card-image" style="width: 15rem">
+                <h4 class="card-title"></h4>
+                <h6>$<span class="card-price"></span></h6>
+                <p class="card-text"></p>
+            </article>
+        </section>
+    </template>
 
+    <div id="product-list" class="row"></div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
 </body>
 </html>
